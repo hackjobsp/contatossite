@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMEF Dr. Octávio Manhães de Andrade - Consulta de Contatos</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>EMEF <span>Dr. Octávio Manhães</span></h1>
+                    <h1>de Andrade</h1>
+                </div>
+            </div>
+            <p class="subtitle">Portal da Secretaria &bull; Consulta de Matrículas e Contatos</p>
+        </header>
+
+        <main>
+            <div class="search-wrapper">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input"
+                        placeholder="Pesquisar por nome do aluno, turma ou responsáveis..." autocomplete="off">
+                    <div id="loading-spinner" class="spinner hidden"></div>
+                    <div class="stats-pill" id="stats-display">
+                        636 Registros Ativos
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-grid" id="results-grid">
+                <!-- Results injected by JS -->
+            </div>
+
+            <div id="no-results" class="no-results hidden">
+                <div style="text-align: center; padding: 4rem; color: var(--text-muted);">
+                    <i class="fas fa-folder-open" style="font-size: 4rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                    <p style="font-size: 1.1rem;">Nenhum arquivo encontrado para esta busca.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p><strong>EMEF "Dr. Octávio Manhães de Andrade"</strong></p>
+            <p>Rua Benjamin Costa, Nº 78, Sagrado Coração de Jesus, Colatina-ES</p>
+            <p style="margin-top: 0.5rem; opacity: 0.7;">&copy; 2026 - Gestão de Secretaria</p>
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
